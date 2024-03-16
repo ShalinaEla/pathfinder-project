@@ -5,8 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = "Features",
+		features = "@Regression",
 		glue = "steps"
+		
 		
 		)
 

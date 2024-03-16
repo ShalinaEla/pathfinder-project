@@ -23,5 +23,8 @@ WebDriverManager.chromedriver().setup();
 		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		
+		//hlw
+		//hi
 	}
 }
