@@ -9,12 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite1</th></tr>
-<tr><td><a href="#t0">Nopackage</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">55,100</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Nopackage</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">142</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Nopackage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">runner.testRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1708887862143</td><td rowspan="3">14454</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Nopackage &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">runner.testRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1710700224941</td><td rowspan="1">121</td></tr></tbody>
 </table>
-<h2>Nopackage</h2><h3 id="m0">runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;searching product in google&quot;</td><td>&quot;searching product&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;searching product in google&quot;</td><td>&quot;searching product&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;searching product in google&quot;</td><td>&quot;searching product&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Nopackage</h2><h3 id="m0">runner.testRunner#setUpClass</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@17aad511</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.nio.file.NoSuchFileException: Regression
+	at io.cucumber.core.options.RerunPath.listRerunFiles(RerunPath.java:56)
+	at io.cucumber.core.options.RerunPath.parse(RerunPath.java:33)
+	at io.cucumber.core.options.FeatureWithLinesOrRerunPath.parse(FeatureWithLinesOrRerunPath.java:48)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addFeatures(CucumberOptionsAnnotationParser.java:133)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:44)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:85)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+Caused by: java.nio.file.NoSuchFileException: Regression
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:220)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:277)
+	at java.base/java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:323)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2804)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+	at io.cucumber.core.options.RerunPath.listRerunFiles(RerunPath.java:53)
+	... 36 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
